@@ -1,0 +1,130 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please take a few minutes to fill out this survey.</p>
+    </header>
+    <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      
+      <label for="number" id="number-label">Number</label>
+      <input type="number" id="number" placeholder="Enter your number" min="0" max="50" required>
+      </fieldset>
+      <fieldset>
+        <label for="color" class="color">Select Your Favorite Color
+          <select id="dropdown" name="color">
+            <option value="">(select one)</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="other">Other</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <legend class="activity">Select Your Occupation:</legend>
+        <label for="student"><input id="student" type="radio" name="occupation" value="student" class="inline"/>Student</label>
+        <label for="part-time-employed"><input id="part-time-employed" type="radio" name="occupation" value="part-time-employed" class="inline" />Part-Time Employed</label>
+        <label for="full-time-employed"><input id="full-time-employed" type="radio" name="occupation" value="full-time-employed" class="inline" />Full-Time Employed</label>
+        <label for="student-employed"><input id="student-employed" type="radio" name="occupation" value="student-employed" class="inline" />Student-Employed</label>
+        <label for="none"><input id="none" type="radio" name="occupation" value="none" class="inline" />None</label>
+      </fieldset>
+      <fieldset>
+        <legend class="activity">Select Your Favorite Activity:</legend>
+        <label for="activity1"><input id="activity1" type="checkbox" name="activities" value="reading" class="inline">Reading</label>
+        <label for="activity2"><input id="activity2" type="checkbox" name="activities" value="traveling" class="inline">Traveling</label>
+        <label for="activity3"><input id="activity3" type="checkbox" name="activities" value="cooking" class="inline">Cooking</label>
+        <label for="activity4"><input id="activity4" type="checkbox" name="activities" value="sports" class="inline">Sports</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments"><textarea id="comments" rows="7" cols="39" placeholder="Anything else we should know..."></textarea>
+      </fieldset>
+      <fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
+      
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: darkblue;
+  color: white;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1, p {
+  margin-top: 0.7em;
+  margin-bottom: 0em;
+  text-align: center;
+}
+form {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+label {
+  display: block;
+  margin: 0.7rem 0;
+}
+input, textarea, select {
+  margin-top: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  min-height: 2em;
+}
+.color {
+  margin-top: 0;
+}
+input, textarea {
+  border: 1px solid;
+}
+.activity {
+  padding-top: 1em;
+  margin-bottom: -30;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input [type="submit"] {
+  display: block;
+  width: 30%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  min-width: 300px;
+}
+
+** end of undefined **
+
